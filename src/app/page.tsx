@@ -1,4 +1,4 @@
-import { IconBrandInstagram } from "@tabler/icons-react";
+import { IconBrandInstagram, IconMail, IconPhone } from "@tabler/icons-react";
 export default function Home() {
   return (
     <>
@@ -36,19 +36,30 @@ export default function Home() {
           </div>
           <div className="h-24" />
           <div className="w-full">
-            <div className=" flex justify-center items-center">
-              <div className="flex gap-4 text-2xl">
+            <div className=" flex justify-center items-end">
+              <div className="flex gap-4 text-2xl items-end">
                 <a
-                  className="flex"
-                  href="https://www.instagram.com/cbex64/?locale=en_US%2Cen_GB&hl=nl"
+                  className="flex items-end gap-2"
+                  href="https://www.instagram.com/cbex64"
                 >
-                  <IconBrandInstagram size="38px" />
-                  @charfitnesswhatever
+                  <IconBrandInstagram size="30px" />
+
+                  <p className="underline">cbex64</p>
                 </a>
                 <p>|</p>
-                <p>charity@strongfitness.com</p>
+                <a
+                  className="flex items-end gap-2"
+                  href="mailto:char@strongfitness.com"
+                >
+                  <IconMail size="30px" />
+                  <p className="underline">char@strongfitness.com</p>
+                </a>
                 <p>|</p>
-                <p>xxx-xxxx</p>
+
+                <a className="flex items-end gap-2" href="tel:+123456789">
+                  <IconPhone size="30px" />
+                  <p className="underline">xxx-xxxx</p>
+                </a>
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default function Home() {
             </p>
           </div>
           <div className="h-32" />
-          <p className="font-[slabo] text-lg md:text-4xl font-bold">
+          <p className="font-[slabo] text-lg md:text-2xl font-bold">
             1:1 Private Sessions (In-Person, 60 min)
           </p>
           <div className="h-6" />

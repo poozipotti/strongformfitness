@@ -1,41 +1,62 @@
-import Image from "next/image";
-
+import { IconBrandInstagram } from "@tabler/icons-react";
 export default function Home() {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: "url('/roof.png')",
-          height: "100vh",
-        }}
-        className="w-full bg-center bg-cover flex justify-center items-center"
-      >
+      <div className="w-full  bg-cover flex justify-center items-center h-[100vh]">
         <div className="flex flex-col items-center">
           <div>
             <h1
-              className="text-white h-min text-9xl font-[anton]"
+              className="text-foreground h-min text-9xl font-[anton]"
               style={{ opacity: "100%" }}
             >
               STRONGFORM NYC
             </h1>
-            <p className="w-full text-right text-white text-3xl ">by Char</p>
+            <p className="w-full text-right text-foreground text-3xl ">
+              by Char
+            </p>
           </div>
           <div className="h-48" />
 
-          <div className="flex justify-center text-center text-accent w-max gap-4 items-end">
-            <div className="flex flex-col justify-center text-center text-accent w-max">
-              <p className="font-[slabo] text-7xl ">Prioritize Wellness</p>
-              <p className="font-[anton] text-6xl">Without the stress</p>j
+          <div className="flex flex-col justify-center align-center text-foreground gap-4 items-end w-full px-12">
+            <div className="flex justify-between text-center text-accent w-full">
+              <p className="font-[anton] text-3xl">1:1 Training session</p>
+              <div className="grow border-b-2 border-dotted h-8 mx-2" />
+              <p className="font-[slabo] text-3xl ">$200/session</p>
             </div>
-            <div className="p-2 w-24 h-24 bg-accent rounded-full text-primary flex justify-center items-center">
-              <p className="text-sm font-bold">Join the Pilate Body Hotties</p>
+            <div className="flex justify-between text-center text-accent w-full">
+              <p className="font-[anton] text-3xl">1:1 Training session</p>
+              <div className="grow border-b-2 border-dotted h-8 mx-2" />
+              <p className="font-[slabo] text-3xl ">$200/session</p>
+            </div>
+            <div className="flex justify-between text-center text-accent w-full">
+              <p className="font-[anton] text-3xl">1:1 Training session</p>
+              <div className="grow border-b-2 border-dotted h-8 mx-2" />
+              <p className="font-[slabo] text-3xl ">$200/session</p>
+            </div>
+          </div>
+          <div className="h-24" />
+          <div className="w-full">
+            <div className=" flex justify-center items-center">
+              <div className="flex gap-4 text-2xl">
+                <a
+                  className="flex"
+                  href="https://www.instagram.com/cbex64/?locale=en_US%2Cen_GB&hl=nl"
+                >
+                  <IconBrandInstagram size="38px" />
+                  @charfitnesswhatever
+                </a>
+                <p>|</p>
+                <p>charity@strongfitness.com</p>
+                <p>|</p>
+                <p>xxx-xxxx</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
         style={{ height: "100vh" }}
-        className="w-full flex justify-center content-center bg-secondarybg-center bg-cover "
+        className="w-full flex justify-center content-center  "
       ></div>
     </>
   );

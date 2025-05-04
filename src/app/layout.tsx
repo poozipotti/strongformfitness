@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Slabo_27px, Anton, Geist, Geist_Mono } from "next/font/google";
+import { Anton, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -35,7 +35,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${slabo.variable} ${anton.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-primary`}
+        className={`${slabo.variable} ${anton.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
+
       >
         {children}
       </body>

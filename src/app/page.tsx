@@ -39,21 +39,19 @@ export default function Home() {
 
                 <p className="underline">@cbex64</p>
               </a>
-              <div className="flex">
-                <p className=" md:block">|</p>
-                <a
-                  className="flex items-end gap-2"
-                  href="mailto:char@strongfitness.com"
-                >
-                  <IconMail size="20px" />
-                  <p className="underline">Strongformnyc@gmail.com</p>
-                </a>
-                <p className="hidden md:block">|</p>
-                <a className="flex items-end gap-2" href="tel:+6093650727">
-                  <IconPhone size="20px" />
-                  <p className="underline">609-365-0727</p>
-                </a>
-              </div>
+              <p className="hidden md:block">|</p>
+              <a
+                className="flex items-end gap-2"
+                href="mailto:char@strongfitness.com"
+              >
+                <IconMail size="20px" />
+                <p className="underline">Strongformnyc@gmail.com</p>
+              </a>
+              <p className="hidden md:block">|</p>
+              <a className="flex items-end gap-2" href="tel:+6093650727">
+                <IconPhone size="20px" />
+                <p className="underline">609-365-0727</p>
+              </a>
             </div>
           </div>
         </div>

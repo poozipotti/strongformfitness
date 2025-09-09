@@ -16,11 +16,11 @@ export default function Home() {
             </p>
           </div>
           <div className="h-32" />
-          <p className="font-[slabo] text-lg md:text-2xl font-bold align-self-start md:align-self-center ">
+          <p className="font-[slabo] text-lg md:text-2xl font-bold w-full md:w-fit">
             Offerings
           </p>
           <div className="h-6" />
-          <div className="flex flex-col justify-center align-center text-foreground gap-4 items-end w-full md:w-1/2">
+          <div className="flex flex-col justify-center align-center text-foreground gap-4 items-end w-full md:w-1/2 pl-4">
             <ul className="list-disc">
               <li>Consultation/Assessment Session</li>
               <li>1:1 Private sessions (60 minutes)</li>

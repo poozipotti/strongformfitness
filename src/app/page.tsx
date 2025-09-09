@@ -16,7 +16,7 @@ export default function Home() {
             </p>
           </div>
           <div className="h-32" />
-          <p className="font-[slabo] text-lg md:text-2xl font-bold">
+          <p className="font-[slabo] text-lg md:text-2xl font-bold align-self-start md:align-self-center ">
             Offerings
           </p>
           <div className="h-6" />

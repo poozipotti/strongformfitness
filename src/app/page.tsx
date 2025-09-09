@@ -17,39 +17,41 @@ export default function Home() {
           </div>
           <div className="h-32" />
           <p className="font-[slabo] text-lg md:text-2xl font-bold">
-            1:1 Private Sessions (In-Person, 60 min)
+            Offerings
           </p>
           <div className="h-6" />
           <div className="flex flex-col justify-center align-center text-foreground gap-4 items-end w-full md:w-1/2">
-            <PriceDisplay itemName="Single Session" cost={200} />
-            <PriceDisplay itemName="4-pack" cost={750} amountOfItems={4} />
-            <PriceDisplay itemName="8-pack" cost={1440} amountOfItems={8} />
-            <PriceDisplay itemName="12-pack" cost={2040} amountOfItems={12} />
+            <ul className="list-disc">
+              <li>Consultation/Assessment Session</li>
+              <li>1:1 Private sessions (60 minutes)</li>
+              <li>Group sessions 2-3 clients (60 minutes)</li>
+              <li>Custom workout plans (4 week, 8 week, 12 week)</li>
+            </ul>
           </div>
           <div className="h-24" />
           <div className="w-full">
-            <div className="flex flex-col md:flex-row gap-4 text-2xl items-left md:items-center justify-center">
+            <div className="flex flex-col md:flex-row gap-4 items-left md:items-center justify-center">
               <a
                 className="flex items-end gap-2"
                 href="https://www.instagram.com/cbex64"
               >
-                <IconBrandInstagram size="30px" />
+                <IconBrandInstagram size="20px" />
 
-                <p className="underline">cbex64</p>
+                <p className="underline">@cbex64</p>
               </a>
-              <div className="hidden">
-                <p className="hidden md:block">|</p>
+              <div className="flex">
+                <p className=" md:block">|</p>
                 <a
                   className="flex items-end gap-2"
                   href="mailto:char@strongfitness.com"
                 >
-                  <IconMail size="30px" />
-                  <p className="underline">char@strongfitness.com</p>
+                  <IconMail size="20px" />
+                  <p className="underline">Strongformnyc@gmail.com</p>
                 </a>
                 <p className="hidden md:block">|</p>
-                <a className="flex items-end gap-2" href="tel:+123456789">
-                  <IconPhone size="30px" />
-                  <p className="underline">xxx-xxxx</p>
+                <a className="flex items-end gap-2" href="tel:+6093650727">
+                  <IconPhone size="20px" />
+                  <p className="underline">609-365-0727</p>
                 </a>
               </div>
             </div>
@@ -57,32 +59,5 @@ export default function Home() {
         </div>
       </div>
     </>
-  );
-}
-
-function PriceDisplay({
-  itemName,
-  cost,
-  amountOfItems,
-}: {
-  itemName: string;
-  cost: number;
-  amountOfItems?: number;
-}) {
-  return (
-    <div className="w-full">
-      <div className="flex justify-between text-center text-accent w-full">
-        <p className="text-xl">{itemName}</p>
-        <div className="grow border-b-2 border-dotted h-8 mx-2" />
-        <p className="text-xl">${cost}</p>
-      </div>
-      {amountOfItems ? (
-        <div className="w-full text-right">
-          (${cost / amountOfItems}/session)
-        </div>
-      ) : (
-        <></>
-      )}
-    </div>
   );
 }
